@@ -1,0 +1,17 @@
+{
+  "name": "scriptapi-addon-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update-typing": "npm i @minecraft/server@beta -D & npm i @minecraft/server-ui@beta -D"
+  },
+  "author": "tutinoko2048",
+  "devDependencies": {
+    "@minecraft/server": "^1.2.0-beta.1.19.80-stable",
+    "@minecraft/server-ui": "^1.0.0-beta.1.19.80-stable",
+    "eslint": "^8.39.0",
+    "typescript": "^5.0.4"
+  }
+}
