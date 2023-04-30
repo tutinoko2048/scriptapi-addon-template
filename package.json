@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "update-typing": "npm i @minecraft/server@beta -D & npm i @minecraft/server-ui@beta -D"
+    "update-types": "npm i @minecraft/server@beta -D & npm i @minecraft/server-ui@beta -D",
+    "lint": "eslint . --ext .js"
   },
   "author": "tutinoko2048",
   "devDependencies": {
