@@ -1,0 +1,32 @@
+{
+  "format_version": 3,
+  "header": {
+    "name": "scriptapi-template v0.1.0",
+    "description": "A template for ScriptAPI addons.",
+    "uuid": "7e983c96-81be-47c0-b84f-e46f28f57db8",
+    "version": "0.1.0",
+    "min_engine_version": [ 1, 21, 130 ]
+  },
+  "modules": [
+    {
+      "version": "0.0.0",
+      "type": "data",
+      "uuid": "a60dc981-fa8a-4fbd-88f7-7fca744305cf",
+      "description": "data module"
+    },
+    {
+      "version": "0.0.0",
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/main.js",
+      "uuid": "7d57f8e4-31ed-4b55-8512-b5df858eded3",
+      "description": "script module"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "beta"
+    }
+  ]
+}

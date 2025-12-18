@@ -1,0 +1,29 @@
+{
+  "name": "scriptapi-template",
+  "type": "module",
+  "scripts": {
+    "build": "tsdown"
+  },
+  "devDependencies": {
+    "@bedrock-apis/env-types": "1.0.0-beta.5",
+    "@minecraft/server": "2.5.0-beta.1.21.130-stable",
+    "@minecraft/server-ui": "2.1.0-beta.1.21.130-stable",
+    "tsdown": "^0.18.1",
+    "typescript": "^5.9.2"
+  },
+  "overrides": {
+    "@minecraft/server": "$@minecraft/server"
+  },
+  "packageManager": "pnpm@10.25.0",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "10.25.0"
+    }
+  },
+  "files": [
+    "./manifest.json",
+    "./scripts",
+    "./LICENSE"
+  ]
+}
