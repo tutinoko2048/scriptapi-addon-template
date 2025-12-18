@@ -20,3 +20,4 @@ ScriptAPIアドオンのテンプレートです。
 
 - mcpackに含まれるファイルは、`package.json`の`files`フィールドで定義されています。
 - ScriptAPI環境用の型定義として [`@bedrock-apis/env-types`](https://github.com/bedrock-apis/env-types) を使用しています。
+- `mklink.bat` を実行すると、このフォルダを `%APPDATA%\Minecraft Bedrock\Users\Shared\games\com.mojang\development_behavior_packs\{フォルダ名}` にシンボリックリンクとして繋げます。

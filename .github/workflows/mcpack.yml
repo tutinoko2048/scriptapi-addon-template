@@ -16,8 +16,6 @@ jobs:
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: 10
 
       - name: Build
         run: |
@@ -28,16 +26,16 @@ jobs:
         id: get-name
         run: |
           name=$(jq -r '.header.name' manifest.json | tr -d '"' | tr ' ' '_')
-          echo "fileName=$name.mcpack" >> $GITHUB_OUTPUT
+          echo "fileName=$name" >> $GITHUB_OUTPUT
 
       - name: Make Archive
         run: |
           echo "Creating archive: ${{ steps.get-name.outputs.fileName }}"
           files=$(jq -r '.files[]' package.json | tr '\n' ' ')
-          zip -r "${{ steps.get-name.outputs.fileName }}" $files
-          cp "${{ steps.get-name.outputs.fileName }}" "${fileName%.mcpack}.zip"
+          zip -r "${{ steps.get-name.outputs.fileName }}.mcpack" $files
+          cp "${{ steps.get-name.outputs.fileName }}.mcpack" "${{ steps.get-name.outputs.fileName }}.zip"
 
       - name: Upload Release Asset
-        run: gh release upload "$GITHUB_REF_NAME" "${{ steps.get-name.outputs.fileName }}" "${fileName%.mcpack}.zip" --clobber
+        run: gh release upload "$GITHUB_REF_NAME" "${{ steps.get-name.outputs.fileName }}.mcpack" "${{ steps.get-name.outputs.fileName }}.zip" --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
