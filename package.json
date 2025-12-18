@@ -2,7 +2,8 @@
   "name": "scriptapi-template",
   "type": "module",
   "scripts": {
-    "build": "tsdown"
+    "build": "tsdown",
+    "watch": "tsdown --watch"
   },
   "devDependencies": {
     "@bedrock-apis/env-types": "1.0.0-beta.5",
