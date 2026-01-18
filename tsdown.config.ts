@@ -5,4 +5,5 @@ export default defineConfig({
   outDir: 'scripts',
   target: 'ES2024',
   external: /^@minecraft\/(?!vanilla-data|math)/,
+  outExtensions: () => ({ js: '.js' }),
 });
