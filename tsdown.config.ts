@@ -6,4 +6,5 @@ export default defineConfig({
   target: 'ES2024',
   external: /^@minecraft\/(?!vanilla-data|math)/,
   outExtensions: () => ({ js: '.js' }),
+  sourcemap: true,
 });
