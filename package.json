@@ -6,10 +6,10 @@
     "watch": "tsdown --watch"
   },
   "devDependencies": {
-    "@bedrock-apis/env-types": "1.0.0-beta.5",
+    "@bedrock-apis/env-types": "1.0.0-beta.6",
     "@minecraft/server": "2.5.0-beta.1.21.130-stable",
     "@minecraft/server-ui": "2.1.0-beta.1.21.130-stable",
-    "tsdown": "^0.18.1",
+    "tsdown": "^0.18.4",
     "typescript": "^5.9.2"
   },
   "overrides": {
