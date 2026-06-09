@@ -6,20 +6,20 @@
     "watch": "tsdown --watch"
   },
   "devDependencies": {
-    "@bedrock-apis/env-types": "1.0.0-beta.6",
-    "@minecraft/server": "2.6.0-beta.1.26.3-stable",
-    "@minecraft/server-ui": "2.1.0-beta.1.26.3-stable",
-    "tsdown": "^0.21.3",
-    "typescript": "^5.9.2"
+    "@bedrock-apis/env-types": "1.0.0-rc.1",
+    "@minecraft/server": "2.8.0-beta.1.26.21-stable",
+    "@minecraft/server-ui": "2.1.0-beta.1.26.21-stable",
+    "tsdown": "^0.22.2",
+    "typescript": "^6.0.3"
   },
   "overrides": {
     "@minecraft/server": "$@minecraft/server"
   },
-  "packageManager": "pnpm@10.32.1",
+  "packageManager": "pnpm@11.5.2",
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "10.32.1"
+      "version": "11.5.2"
     }
   },
   "files": [
